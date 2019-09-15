@@ -1,0 +1,71 @@
+<html>
+<head>
+<style> 
+div {
+    width: 325px;
+    height: 350px;
+    background-image: url(mlogo.jpg);
+    position: relative;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 20s;
+}
+.imag
+{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+.images
+{
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+}
+.i
+{
+position: absolute;
+top: 0px;
+left: 1200px;
+right: 0px;
+}
+.m
+{
+position: absolute;
+top: 0px;
+left: 1275px;
+right: 0px;
+}
+
+@keyframes example {
+    0%   {background-color:red; left:200px; top:200px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+@keyframes example {
+    0%   {background-image:url(mlogo.jpg); left:0px; top:0px;}
+    25%  {background-color:url(mlogo.jpg); left:200px; top:0px;}
+    50%  {background-color:url(mlogo.jpg); left:200px; top:200px;}
+    75%  {background-color:url(mlogo.jpg); left:0px; top:200px;}
+    100% {background-color:url(mlogo.jpg); left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+<table><tr><td>
+<image src="logo.jpg" class="imag" height="100" width="1370">
+</td></tr></table>
+<image src="mlogo.jpg" class="images" height="100" width="100">
+<input type="button" name="HOME" class="i" value="HOME" id="b3" class="but,a,b" onclick="window.location.href='home.html'">
+<input type="button" name="signup" value="SIGN UP" class="m" id="b2" class="but,a,b" onclick="window.location.href='signup.html'">
+
+<div class="example"><p size="40" align="center" color="red"><b color="red">WELCOME</b></p><input type="button" name="login" value="LOGIN" onClick="window.location.href='login.html'"> </div>
+
+</body>
+</html>

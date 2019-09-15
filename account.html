@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+body {
+background-image: url("home2.jpg");
+background-repeat: no-repeat;
+}
+.images
+{
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+}
+.imag
+{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+.tbl
+{
+position: absolute;
+top: 0px;
+left: 1100px;
+right: 0px;
+}
+.k
+{
+position: absolute;
+top: 80px;
+left: 1280px;
+right: 0px;
+}
+</style>
+</head>
+<body>
+<image src="logo.jpg" class="imag" height="100" width="1550">
+<image src="mlogo.jpg" class="images" height="100" width="100">
+<TABLE class="tbl" ALIGN="RIGHT">
+<TR><TD>
+<TD><INPUT TYPE="BUTTON" ID="B4" NAME="HOME" VALUE="HOME" ONCLICK="location='home1.html'"></TD>
+<td><INPUT TYPE="button" ID="B1" NAME="SEARCH" VALUE="SEARCH" onClick="location='search.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B2" NAME="LOREY" VALUE="LOREY" ONCLICK="location='lorey.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B2" NAME="BILL" VALUE="BILLs" ONCLICK="location='page1.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B3" NAME="CALCULATOR" VALUE="CALCULATOR" ONCLICK="location='calculator1.html'"></TD>
+<td><INPUT TYPE="BUTTON" ID="B5" NAME="logout" VALUE="LOGOUT" ONCLICK="location='home.html'"></td>
+</TR>
+</TABLE>
+<br>
+<br>
+<br>
+<br>
+<center>
+<form action="account.php" method="post">
+<h1><b><u>ADD ACCOUNT DETAILS</u></b></h1>
+<table border="1">
+<tr><td align="right">NAME:</td>
+<td align="left"><input type="text" name="name" id="1"></td>
+<td align="right">DATE:</td>
+<td align="left">
+<select name="date">
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+<select name="month" >
+<option>JAN</option>
+<option>FEB</option>
+<option>MARCH</option>
+<option>APRL</option>
+<option>MAY</option>
+<option>JUNE</option>
+<option>JULY</option>
+<option>AUG</option>
+<option>SEP</option>
+<option>OCT</option>
+<option>NOV</option>
+<option>DEC</option>
+</select>
+<select name="year">
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+<option>2029</option>
+<option>2030</option>
+</select>
+</td>
+<td align="right">AMOUNT:</td>
+<td align="left"><input type="text" name="amount" id="3"></td>
+</tr></table>
+<input type="submit" value="SUBMIT">
+
+</center>
+</body>
+</html>

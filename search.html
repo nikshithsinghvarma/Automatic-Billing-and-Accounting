@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+body {
+background-image: url("home2.jpg");
+background-repeat: no-repeat;
+}
+.images
+{
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+}
+.imag
+{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+.k
+{
+position: absolute;
+top: 80px;
+left: 1280px;
+right: 0px;
+}
+.tbl
+{
+position: absolute;
+top: 0px;
+left: 1100px;
+right: 0px;
+}
+</style>
+</head>
+<body>
+<image src="logo.jpg" class="imag" height="100" width="1550">
+<image src="mlogo.jpg" class="images" height="100" width="100">
+<form action="" method="post">
+<table border="0" class="tbl">
+<tr><td><INPUT TYPE="BUTTON" ID="B1" VALUE="HOME" NAME="HOME" ONCLICK="location='home1.html'"></td>
+<TD><INPUT TYPE="button" ID="B4" NAME="BILL" VALUE="BILL" onClick="location='page1.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B2" NAME="LOREY" VALUE="LOREY" ONCLICK="location='lorey.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B3" NAME="CALCULATOR" VALUE="CALCULATOR" ONCLICK="location='calculator1.html'"></TD>
+<td><INPUT TYPE="BUTTON" ID="B6" NAME="account" VALUE="ACCOUNT" ONCLICK="location='account.html'"></td>
+<td><INPUT TYPE="BUTTON" ID="B5" NAME="logout" VALUE="LOGOUT" ONCLICK="location='home.html'"></td>
+</tr>
+</table>
+<br><br><br><br><br><br>
+<table BORDER="0" align="center">
+<TR><TD ALIGN="CENTER" COLSPAN="2"><h2><CENTER><U BGCOLOR="RED">SEARCH BY BILL NO</U></CENTER></H2></TD></TR>
+<tr><td align="right">BILLNO:</TD><TD ALIGN="LEFT"><input type="text" id="t1" value=""></td>
+</tr>
+<TR><TD> </TD> <TD> </TD> </TR>
+<tr><td align="center" colspan="2"><input type="submit" id="s1" name="search" value="SEARCH"></td>
+</tr>
+</table>
+<TABLE BORDER="0" ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN="2"><h2><CENTER><U BGCOLOR="RED">SEARCH BY NAME,VILLAGE</U></CENTER></H2></TD></TR>
+<tr><td align="right">NAME:</TD><TD ALIGN="LEFT"><input type="text" id="t2" value=""></td>
+</tr>
+<TR>><td align="right">VILLAGE:</TD><TD ALIGN="LEFT"><input type="text" id="t3" value=""></td> </TR>
+<tr><td align="center" colspan="2"><input type="submit" id="s1" name="search" value="SEARCH"></td>
+</tr>
+</table>
+</form>
+</body>
+</HTML>

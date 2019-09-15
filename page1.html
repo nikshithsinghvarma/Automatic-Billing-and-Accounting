@@ -1,0 +1,193 @@
+<html>
+<head bgcolor="#d3d3d3"><title>my project page 1</title>
+<style>
+body {
+background-image: url("home2.jpg");
+background-repeat: no-repeat;
+}
+.images
+{
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+}
+.imag
+{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+.k
+{
+position: absolute;
+top: 0px;
+left: 1280px;
+right: 0px;
+}
+.tbl
+{
+position: absolute;
+top: 0px;
+left: 1080px;
+right: 0px;
+}
+</style>
+<script language="javascript">
+function X()
+{
+var bags=document.getElementById("T5").value;
+var kgs=document.getElementById("T6").value;
+var kgsm=document.getElementById("T11").value;
+var labourva=document.getElementById("T12").value;
+var labourval=labourva*bags;
+var kgsmin=kgsm*bags;
+var total=kgs*bags-kgsmin;
+document.getElementById("T7").value=total;
+var t=total/100;
+var qprice=document.getElementById("t8").value;
+document.getElementById("t9").value=total/100;
+var price=qprice*t;
+document.getElementById("t14").value=price;
+var tprice=qprice*t-labourval;
+document.getElementById("t10").value=tprice;
+} 
+</script>
+</head>
+<body>
+<image src="logo.jpg" class="imag" height="100" width="1550">
+<image src="mlogo.jpg" class="images" height="100" width="100">
+<form action="print.php" method="post">
+<TABLE border="0" class="tbl">
+<TR>
+<TD><INPUT TYPE="BUTTON" ID="B4" NAME="HOME" VALUE="HOME" ONCLICK="location='home1.html'"></TD>
+<INPUT TYPE="button" ID="B1" NAME="SEARCH" VALUE="SEARCH" onClick="location='search.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B2" NAME="LOREY" VALUE="LOREY" ONCLICK="location='lorey.html'"></TD>
+<TD><INPUT TYPE="BUTTON" ID="B3" NAME="CALCULATOR" VALUE="CALCULATOR" ONCLICK="location='calculator1.html'"></TD>
+<td><INPUT TYPE="BUTTON" ID="B6" NAME="account" VALUE="ACCOUNT" ONCLICK="location='account.html'"></td>
+<td><INPUT TYPE="BUTTON" ID="B7" NAME="search" VALUE="SEARCH" ONCLICK="location='search.html'"></td>
+<td><INPUT TYPE="BUTTON" ID="B5" NAME="logout" VALUE="LOGOUT" ONCLICK="location='home.html'"></td>
+</TR>
+</TABLE>
+<br>
+<br>
+<br>
+<BR>
+<BR>
+<h1><center><U>BILL</U></CENTER></H1><BR>
+<TABLE BORDER="0" align="center">
+<TR>
+<TD align="right">BILLNO:</td><td align="left"><input type="text" name="billno" id="t1" onclick="y();" value=""></td>
+<TD ALIGN="right">DATE:</td><td align="left"><select id=T3" name="day" VALUE="">
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+<select name="month" >month
+<option>JAN</option>
+<option>FEB</option>
+<option>MARCH</option>
+<option>APRL</option>
+<option>MAY</option>
+<option>JUNE</option>
+<option>JULY</option>
+<option>AUG</option>
+<option>SEP</option>
+<option>OCT</option>
+<option>NOV</option>
+<option>DEC</option>
+</select>
+<select name="year">
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+<option>2029</option>
+<option>2030</option>
+</select>
+</TD>
+</tr>
+<TR><TD ALIGN="RIGHT">NAME:</TD><TD ALIGN="LEFT"> <INPUT TYPE="TEXT" ALIGN="CENTER" name="name" ID="T2" VALUE=""></TD>
+<td align="right">MOBILE NO(*):</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" name="mobile" ID="T18" VALUE="" pattern=[789][0-9]{9}></TD>
+</TR>
+<tr><td align="right">VILLAGE:</td><td align="left"><INPUT TYPE="TEXT" name="village" ID="T4" VALUE=""></td>
+<td align="right">PADDU:</td><TD ALIGN="LEFT"><select id="s1" name="paddu" VALUE="">
+<option>15</option>
+<option>20</option>
+<option>25</option>
+<option>30</option>
+</select></td>
+</tr>
+<tr><td align="right">NO OF BAGS:</td><td align="left"><INPUT TYPE="TEXT" name="nbags" ID="T5" VALUE="" pattern="[0-9.]+"></td>
+<td align="right">CROP TYPE:</td><td align="left">
+<select id="s3" name="crop" VALUE="">
+<option>PADDY</option>
+<option>SOYA</option>
+<option>CHANA</option>
+<option>WET</option>
+<option>OTHERS</optioin>
+</select>
+<select id="s2" name="type" VALUE="">
+<option>DRY</option>
+<option>WET</option></select></td></tr>
+<TR>
+<TD ALIGN="right">KG'S/PER BAG:</td><td align="lest"><INPUT TYPE="TEXT" name="kgspbag" ID="T6" onchange="" VALUE="" pattern="[0-9.]+"></TD>
+<td align="right">EXTRA WEIGHT TO PER BAG(-):</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" name="extraweight" ID="T11" ONCHANGE="" VALUE="" pattern="[0-9.]+"></TD>
+<TD ALIGN="right" >TOTAL KG'S:</td><td align="left"><INPUT TYPE="TEXT" ID="T7" name="tkgs" VALUE="" pattern="[0-9.]+"></TD>
+</tr>
+<tr>
+<TD ALIGN="RIGHT">LABOUR CHARGES PER BAG:</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" name="lcharges" ID="T12" ONCHANGE="" VALUE="" pattern="[0-9.]+"></TD>
+<td align="right">PRICE/QUNTAL:</td><td align="left"><input type="text" name="pricepquntal" id="t8" onchange="X();" value="" pattern="[0-9.]+"></td>
+<td align="right">NO OF QUNTALS:</td><td align="left"><input type="text" name="nofquntals" id="t9" onchange="" value="" pattern="[0-9.]+"></td>
+</TR>
+<TR>
+<TD align="right">PRICE:</td><td align="left"><input type="text" name="price" id="t14" onchange="" value="" pattern="[0-9.]+"></td>
+<BR><td align="right">TOTAL PRICE:</td><td align="left"><input type="text" name="tprice" id ="t10" onchange="" value="" pattern="[0-9.]+"></td>
+</tr>
+</TABLE>
+<BR><BR><BR><CENTER>
+<INPUT TYPE="SUBMIT" ID="S1" VALUE="SUBMIT"  NAME="SUBMIT" ONCLICK="">
+<INPUT TYPE="RESET" ID="R1" VALUE="RESET" NAME="RESET">
+</CENTER>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,258 @@
+<html>
+<head>
+<style>
+body {
+background-image: url("home2.jpg");
+background-repeat: no-repeat;
+}
+.tbl1
+{
+position: absolute;
+top: 120px;
+left: 100px;
+right: 30px;
+}
+.tbl2
+{
+position: absolute;
+top: 120px;
+left: 50px;
+right: 30px;
+}
+.imag
+{
+position: absolute;
+top: 0px;
+left: 0px;
+right: 0px;
+}
+.i
+{
+position: absolute;
+top: 0px;
+left: 980px;
+right: 0px;
+}
+.k
+{
+position: absolute;
+top: 0px;
+left: 1290px;
+right: 0px;
+}
+.l
+{
+position: absolute;
+top: 0px;
+left: 1040px;
+right: 0px;
+}
+.j
+{
+position: absolute;
+top: 0px;
+left: 1180px;
+right: 0px;
+}
+.tbl2
+{
+position: absolute;
+top: 0px;
+left: 1160px;
+right: 0px;
+}
+.images
+{
+position: absolute;
+top: 0px;
+left: 200px;
+right: 0px;
+}
+</style>
+<script language="javascript">
+function T()
+{
+var qprice=document.getElementById("t8").value;
+var tqls=document.getElementById("t9").value;
+var totalprice=tqls*qprice;
+document.getElementById("t10").value=totalprice;
+}
+function A()
+{
+var net=document.getElementById("t23").value;
+var labourcharges=document.getElementById("T12").value;
+var kg=net*100;
+var a=document.getElementById("t27").value;
+var b=document.getElementById("t28").value;
+var c=document.getElementById("t29").value;
+var d=document.getElementById("T11").value;
+var totalkgs=kg-a-b-c-d;
+document.getElementById("t14").value=totalkgs;
+var tqtls=totalkgs/100;
+document.getElementById("t9").value=tqtls;
+}
+function y()
+{
+var empty=document.getElementById("t21").value;
+var load=document.getElementById("t22").value;
+var net=load-empty;
+document.getElementById("t23").value=net;
+}
+function Z()
+{
+var loadlorey=document.getElementById("t24").value;
+var emptylorey=document.getElementById("t25").value;
+var netweight=loadlorey-emptylorey;
+document.getElementById("t26").value=netweight;
+document.getElementById("t22").value=netweight;
+}
+</script>
+</head>
+<body bgcolor="#d3d3d3">
+<image src="logo.jpg" class="imag" height="100" width="1550">
+<image src="mlogo.jpg" class="images" height="100" width="100">
+<table border="0" class="tbl2"><tr>
+<td><input type="button" name="HOME" value="HOME" id="b3" onclick="window.location.href='home1.html'"></td>
+<td><input type="button" name="bill" value="BILL" id="b2" onclick="window.location.href='page1.html'"></td>
+<td><input type="button" name="calculaor" value="CALCULATOR" id="b1" onclick="window.open(href='calculator1.html')"></td>
+<td><input type="button" name="logout" value="LOGOUT" id="b1" onclick="window.location.href='home.html'"></td>
+<td><input type="button" name="account" value="ACCOUNT" id="b1" onclick="window.location.href='account.html'"></td></tr>
+</table>
+<table align="center" class="tbl1" border="0">
+<tr><td align="center" colspan="6"><CENTER><h1><b>ADD LOREY DETAILS</B></H1></CENTER></td></tr>
+<form action="lorey.php" method="post">
+<tr>
+<td colspan="2" align="right"><table border="1" cellpadding="1" cellspaceing="1">
+<tr><td align="right">LOAD LOREY:</td><td align="left"><INPUT TYPE="text" ID="t24" value="" name="eptlorey" pattern="[0-9.]+"></td></tr>
+<tr><td align="right">EMPTY LOREY:</td><td align="left"><INPUT TYPE="TEXT" ID="t25" value="" name="loadlorey" onchange="Z();" pattern="[0-9.]+"></td></tr>
+<tr><td align="right">NET WEIGHT:</td><td align="left"><INPUT TYPE="TEXT" ID="t26" onchange="" value="" name="netweight"></td></tr>
+</table>
+</td>
+<td></td>
+<td align="right"><table border="1" cellpadding="1" cellspaceing="1">
+<tr><td align="right">GROSS:</td><td align="left"><INPUT TYPE="text" ID="t22" value="" name="gross" pattern="[0-9.]+"></td></tr>
+<tr><td align="right">TARE:</td><td align="left"><INPUT TYPE="text" ID="t21" value="" name="tare" onchange="y();" pattern="[0-9.]+"></td></tr>
+<tr><td align="right">NET WEIGHT:</td><td align="left"><INPUT TYPE="text" ID="t23" value="" name="net"></td></tr>
+</table>
+</td>
+</tr>
+<tr><TD align="right">SERIALNO:</td><td align="left"><input type="text" id="t1" name="billno"value=""></td>
+<TD ALIGN="right">DATE:</td><td align="left"><select id=T3" name="date" VALUE="">
+<option>01</option>
+<option>02</option>
+<option>03</option>
+<option>04</option>
+<option>05</option>
+<option>06</option>
+<option>07</option>
+<option>08</option>
+<option>09</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+<select name="month">month
+<option>JAN</option>
+<option>FEB</option>
+<option>MARCH</option>
+<option>APRL</option>
+<option>MAY</option>
+<option>JUNE</option>
+<option>JULY</option>
+<option>AUG</option>
+<option>SEP</option>
+<option>OCT</option>
+<option>NOV</option>
+<option>DEC</option>
+</select>
+<select name="year">
+<option>2015</option>
+<option>2016</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+<option>2029</option>
+<option>2030</option>
+</select>
+</TD>
+<TD ALIGN="right">EMPTY GUNNIES CUTTING:</td><td align="lest"><INPUT TYPE="TEXT" ID="t28" name="egc" onchange="A();" value="0"></TD>
+</tr>
+<tr><td align="right">VILLAGE:</td><td align="left"><INPUT TYPE="TEXT" name="village" ID="T20" value=""></td>
+<td align="right">CROP TYPE:</td><td align="left">
+<select id="s3" name="crop" VALUE="">
+<option>PADDY</option>
+<option>SOYA</option>
+<option>CHANA</option>
+<option>OTHERS</optioin>
+</select>
+<select id="s2" name="type" VALUE="">
+<option>DRY</option>
+<option>WET</option></select>
+PADDU:<select id="s1" name="paddu" VALUE="">
+<option>15</option>
+<option>20</option>
+<option>25</option>
+<option>30</option>
+</select>
+</td>
+<TD ALIGN="right">WEIGHT BRIDGE CUTTING KGS:</td><td align="left"><INPUT TYPE="TEXT" ID="t27" name="wbc" onchange="A();" value="0"></TD>
+</tr>
+<tr><td align="right">NO OF BAGS:</td><td align="left"><INPUT TYPE="TEXT" ID="T5" name="nobags" value="" pattern="[0-9.]+"></td>
+<td align="right">EXTRA WEIGHT TO KGS(-):</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" ID="T11" name="eweight" ONCHANGE="A();" value="0"></TD>
+<TD ALIGN="right">KACCHA CUTTING KGS:</td><td align="left"><INPUT TYPE="TEXT" ID="t29" name="kc" onchange="A();" value="0"></TD>
+</tr>
+<TR>
+<TD ALIGN="RIGHT">LABOUR CHARGES:</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" ID="T12" name="lcharges" ONCHANGE="" value=""></TD>
+<td align="right">PRICE/QUNTAL:</td><td align="left"><input type="text" id="t8" name="pquntal" onChange="T();" value=""></td>
+<TD ALIGN="RIGHT">TOTAL KG'S:</TD><TD ALIGN="LEFT"><INPUT TYPE="TEXT" ID="t14" name="tkgs" ONCHANGE="" value=""></TD>
+</tr>
+<tr>
+<TD align="right"><H3>RICE MILL:</H3></td><td align="left"><h3><input type="text" name="rmill" id="t14" onchange="" value=""></h3></td>
+<td align="right"><H3>LOREY NO:</H3></td><td align="left"><h3><input type="text" id ="t15" name="loreyno" onchange="" value=""></h3></td>
+<td align="right">NO OF QUNTALS:</td><td align="left"><input type="text" id="t9" onchange="" name="nofquntals" value=""></td>
+</TR>
+<TR>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+<td align="right">TOTAL PRICE:</td><td align="left"><input type="text" id ="t10" onclick="A();" name="tprice" value="" pattern="[0-9.]+"></td>
+</tr>
+<tr><td></td><td></td>
+<td align="right"><INPUT TYPE="SUBMIT" ID="S1" VALUE="SUBMIT" NAME="SUBMIT" ONCLICK=""></td>
+<td align="center"><input type="reset" id="p1" value="RESET"></td>
+</tr>
+</table>
+<br><br><br><center>
+
+</form>
+</body>
+</html>
